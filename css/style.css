@@ -28,7 +28,7 @@ body {
   text-align: center;
   justify-content: center;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 span {
@@ -45,6 +45,42 @@ span {
   to {
     background-position: top right;
   }
+}
+@media (max-width: 1200px) {
+  /*====Productos====*/
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    text-align: center;
+    justify-content: center;
+    margin-right: 200px;
+  }
+  .h2-product {
+    font-size: 30px !important;
+    color: var(--thirth-color) !important;
+  }
+  .h3-product {
+    font-size: 20px !important;
+    font-weight: 300;
+    color: var(--span-color) !important;
+    margin-bottom: 5px;
+    font-family: var(--fourth-font) !important;
+  }
+  .talles {
+    color: var(--span-color) !important;
+  }
+  .talla {
+    color: var(--span-color) !important;
+  }
+  .glass {
+    backdrop-filter: none !important;
+    height: 451px !important;
+    width: 430px;
+    margin-top: 0px !important;
+    justify-content: center;
+    backdrop-filter: none !important;
+  }
+  /*====Productos====*/
 }
 @media (max-width: 990px) {
   /*====Header====*/
@@ -67,6 +103,14 @@ span {
   }
   nav ul li a {
     font-size: 1rem;
+  }
+  /*====Productos====*/
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    text-align: center;
+    justify-content: center;
+    margin-right: 100px;
   }
   /*====Footer====*/
   .row {
@@ -111,6 +155,14 @@ span {
   }
   #check:checked ~ ul {
     left: 0;
+  }
+  /*====Productos====*/
+  .product {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center;
+    margin: auto 20px !important;
   }
   /*====Footer====*/
   .row {
@@ -264,6 +316,34 @@ li a:hover {
 }
 
 .container-product {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px;
+}
+
+.container-title h2 {
+  font-size: 50px;
+  color: var(--thirth-color);
+  text-align: center;
+  justify-content: center;
+}
+
+.container-title p {
+  font-size: 40px;
+  color: var(--span-color);
+  text-align: center;
+  justify-content: center;
+}
+
+.product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -271,10 +351,10 @@ li a:hover {
 }
 
 .box-product {
-  margin: 20px auto;
   text-align: center;
   width: 100%;
   margin-left: 100px;
+  margin: 20px auto 20px 100px;
 }
 
 .glass {
@@ -408,7 +488,7 @@ li a:hover {
   border-radius: 30px;
   display: flex;
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.75);
-  background-color: var(--span-color);
+  background-color: aqua;
 }
 
 footer {

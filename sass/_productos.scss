@@ -1,4 +1,33 @@
 .container-product {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px;
+}
+
+.container-title h2 {
+  font-size: 50px;
+  color: var(--thirth-color);
+  text-align: center;
+  justify-content: center;
+}
+
+.container-title  p {
+font-size: 40px;
+  color: var(--span-color);
+  text-align: center;
+  justify-content: center;
+}
+
+
+.product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -6,10 +35,10 @@
 }
 
 .box-product {
-  margin: 20px auto;
   text-align: center;
   width: 100%;
   margin-left: 100px;
+  margin: 20px auto 20px 100px;
 }
 
 .glass {
@@ -142,5 +171,5 @@
   border-radius: 30px;
   display: flex;
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.75);
-  background-color: var(--span-color);
+  background-color: aqua;
 }
