@@ -1,0 +1,154 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+
+.container-footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    min-width: 250px;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    padding: 0 2rem;
+}
+
+.col .logo {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.col h3 {
+    color: var(--third-color);
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.col h3::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: var(--span-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease;
+}
+
+.col h3:hover::after {
+    width: 30px;
+}
+
+.col .social a i {
+color: var(--span-color);
+margin-top: 2rem;
+margin-right: 8px;
+transition: .5s ease;
+font-size:25px;
+}
+
+.col .social a i:hover {
+    transform: scale(1.5);
+    filter: grayscale(25);
+    color: var(--span-color);
+}
+
+.col .links a {
+    display: block;
+    text-decoration: none;
+    color: var(--span-color);
+    margin-bottom: 5px;
+    position: relative;
+    transition: .3s ease;
+}
+
+.col .links a::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: var(--span-color);
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.col .links a:hover::before {
+    opacity: 1;
+}
+
+.col .links a:hover {
+    transform: translateX(-8px);
+    color: var(--span-color);
+}
+
+.col .contact-details {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.col .contact-details i {
+    color: var(--span-color);
+    margin-right: 15px;
+    font-size: 20px;    
+}
+
+.row .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: auto;
+}
+
+.row .form input {
+    background-color: var(--primary-color);
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+form button {
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--span-color);
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+
+

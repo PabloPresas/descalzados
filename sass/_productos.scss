@@ -1,0 +1,146 @@
+.container-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.box-product {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.glass {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 30px;
+  height: 230px;
+  width: 430px;
+  margin-top: 220px;
+  position: absolute;
+  background-color: rgba(93, 233, 255, 0.4);
+  backdrop-filter: blur(1px);
+  text-align: center;
+  transition: 1.5s all;
+  overflow: hidden;
+}
+
+.glass:hover {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 451px;
+  width: 430px;
+  margin-top: 0;
+  background-color: rgba(32, 72, 78, 0.4);
+  transition: 1.5s all;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass:hover .talles {
+  margin-top: 10px;
+  transition: 1.5s all;
+}
+
+.glass img {
+  width: 30px;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 25px;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.h2-product {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+.h3-product {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.precio {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.precio span {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.talles {
+  margin-top: 70px;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.talle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid rgba(245, 245, 245, 1);
+  font-size: 20px;
+}
+
+.talle:hover {
+  background-color: rgba(32, 72, 78, 0.9);
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer button {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.footer button:hover {
+  background-color: rgba(32, 72, 78, 0.9);
+  transition: 1.5s all;
+  font-weight: 700;
+}
+
+.imagen {
+  height: 450px;
+  width: 430px;
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.75);
+  background-color: var(--span-color);
+}

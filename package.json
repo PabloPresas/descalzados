@@ -1,0 +1,15 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "Tienda de Calzados deportivos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Calzados",
+    "Shoes"
+  ],
+  "author": "Pablo Presas",
+  "license": "ISC"
+}

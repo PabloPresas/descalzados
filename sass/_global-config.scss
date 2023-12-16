@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Montserrat:wght@300;400;500;700&family=Outfit:wght@300;400;700;900&family=Roboto:wght@300;400;900&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Roboto', 'Chakra Petch', 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: rgba(245, 245,245, 1);
+    --second-color: rgba(43, 47, 63, .3);
+    --thirth-color: #d2ab34;
+    --fourth-color: rgba(226, 49, 76, 1);
+    --span-color: rgba(242, 83, 10, 1);
+    --nav-color: rgba(43, 47, 63, 1);
+    --primary-font: font-family: 'Outfit', sans-serif;
+    --second-font: font-family: 'Roboto', sans-serif;
+    --third-font: font-family: 'Chakra Petch', sans-serif;
+    --fourth-font: font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+span {
+    color: var(--span-color);
+}
