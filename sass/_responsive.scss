@@ -1,0 +1,101 @@
+
+@media (max-width: 990px) {
+
+  /*====Productos====*/
+  .col-md-3 {
+    width: 40% !important;
+  }
+
+  /*====footer====*/
+
+  .row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .col {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .col#company {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  /*====Productos====*/
+  .col-md-3 {
+    width: 50% !important;
+  }
+
+  /*====Contacto====*/
+
+  .contact-in {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .contact-map {
+    width: 100%;
+    flex: 40%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 90%;
+    flex: 40%;
+    margin: auto;
+    text-align: center;
+  }
+
+  /*====footer====*/
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /*====Productos====*/
+  .col-md-3 {
+    width: 70% !important;
+  }
+
+  /*====Carrito====*/
+
+  button .comprar-btn {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+  }
+
+  /*====Contact====*/
+
+  .contact-form-btn {
+    width: 30%;
+  }
+}

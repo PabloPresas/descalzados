@@ -7,12 +7,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow-x: hidden !important;
     font-family: 'Outfit', 'Roboto', 'Chakra Petch', 'Montserrat', sans-serif;
 }
 
 :root {
     --primary-color: rgba(245, 245,245, 1);
-    --second-color: rgba(43, 47, 63, .3);
+    --second-color: rgba(43, 47, 63, .5);
     --thirth-color: #d2ab34;
     --fourth-color: rgba(226, 49, 76, 1);
     --span-color: rgba(242, 83, 10, 1);
@@ -31,8 +32,40 @@ body {
     justify-content: center;
     scroll-behavior: smooth;
     overflow-x: hidden !important;
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: var(--second-color);
+    margin: 20px auto;
+    box-shadow: 0 0 12px var(--span-color);
 }
 
 span {
     color: var(--span-color);
 }
+
+.tittle h1 {
+     text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: var(--thirth-color);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.tittle h3 {
+     text-align: center;
+    font-size: 1.1rem;
+    color: var(--second-color);
+}
+

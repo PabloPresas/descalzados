@@ -1,175 +1,87 @@
-.container-product {
-  align-items: center;
+.container h2 {
+  text-align: center;
   justify-content: center;
-}
-
-.container-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  margin: 50px;
-}
-
-.container-title h2 {
-  font-size: 50px;
   color: var(--thirth-color);
-  text-align: center;
-  justify-content: center;
+  width: 250px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+  left: 0;
+  top: 34px;
+  border-radius: 10px;
 }
 
-.container-title  p {
-font-size: 40px;
+.row {
+  margin-top: 30px;
+}
+
+.col-md-3 {
+  width: 25%;
+  height: 10%;
+  margin: 30px 10px;
+  border: 1px solid var(--span-color);
+  border-radius: 10px;
+  box-shadow: 0 0 12px var(--span-color);
+}
+
+.col-md-3:hover {
+  transform: scaleY(1.05);
+  transition: .3s;
+}
+
+.product-top img {
+  width: 15rem;
+}
+
+.product-bottom  .fa-solid, .fa-regular {
   color: var(--span-color);
-  text-align: center;
-  justify-content: center;
+  font-size: 10px;
 }
 
-
-.product {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
+.product-bottom h3 {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.box-product {
-  text-align: center;
-  width: 100%;
-  margin-left: 100px;
-  margin: 20px auto 20px 100px;
+.product-bottom h5 {
+  color: var(--thirth-color);
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
-.glass {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  border-radius: 30px;
-  height: 230px;
-  width: 430px;
-  margin-top: 220px;
+.overlay {
+  display: block;
+  opacity: 0;
   position: absolute;
-  background-color: rgba(93, 233, 255, 0.4);
-  backdrop-filter: blur(1px);
-  text-align: center;
-  transition: 1.5s all;
-  overflow: hidden;
+  top: 20%;
+  margin-left: 0;
+  width: 40px;  
 }
 
-.glass:hover {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 451px;
-  width: 430px;
-  margin-top: 0;
-  background-color: rgba(32, 72, 78, 0.4);
-  transition: 1.5s all;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 1%;
+  transition: .5s; 
 }
 
-.glass:hover .talles {
-  margin-top: 10px;
-  transition: 1.5s all;
-}
-
-.glass img {
-  width: 30px;
-}
-
-.cabecera {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding-top: 25px;
-  font-size: 25px;
-  color: var(--primary-color);
-}
-
-.h2-product {
-  font-size: 50px;
-  color: var(--primary-color);
-}
-.h3-product {
-  font-size: 30px;
-  font-weight: 300;
-  color: var(--primary-color);
-}
-
-.precio {
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.precio span {
-  font-size: 20px;
-  color: var(--primary-color);
-  font-weight: 300;
-}
-
-.talles {
-  margin-top: 70px;
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.talle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  color: var(--primary-color);
-  background-color: transparent;
-  border: 1px solid rgba(245, 245, 245, 1);
-  font-size: 20px;
-}
-
-.talle:hover {
-  background-color: rgba(32, 72, 78, 0.9);
-}
-
-.contenido {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.footer button {
-  background-color: transparent;
-  border-radius: 15px;
-  border: 1px solid var(--primary-color);
-  width: 120px;
-  height: 40px;
-  font-size: 20px;
+.overlay .fa-regular {
   cursor: pointer;
-  color: var(--primary-color);
+  background-color: #fff;
+  color: var(--span-color);
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
 }
 
-.footer button:hover {
-  background-color: rgba(32, 72, 78, 0.9);
-  transition: 1.5s all;
-  font-weight: 700;
+.overlay .btn-secondary {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
 }
 
-.imagen {
-  height: 450px;
-  width: 430px;
-  border-radius: 30px;
-  display: flex;
-  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.75);
-  background-color: aqua;
-}
+

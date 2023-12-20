@@ -1,3 +1,45 @@
-.section {
-    margin-bottom: 20px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container h1 {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: var(--thirth-color);
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.container h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin: 30px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.descriptions img {
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.descriptions p {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.descriptions h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
 }
